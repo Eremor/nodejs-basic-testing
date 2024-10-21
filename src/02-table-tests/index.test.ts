@@ -21,7 +21,7 @@ const testCases = [
 ];
 
 describe('simpleCalculator', () => {
-  test.each(testCases)('should return values ​​equal to expected', (args) => {
+  test.each(testCases)('should %s two numbers', (args) => {
     const { a, b, action, expected } = args;
     const result = simpleCalculator({ a, b, action });
     expect(result).toBe(expected);
